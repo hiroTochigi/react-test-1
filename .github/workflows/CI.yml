@@ -27,6 +27,7 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: |
+          ls
           cd react-test-1
           npm ci
       - name: Build App
