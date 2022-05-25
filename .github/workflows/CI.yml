@@ -27,18 +27,18 @@ jobs:
           cache: "npm"
       - name: Install dependencies
         run: |
-          cd my-app
+          cd react-test-1
           npm ci
       - name: Build App
         run: |
-          cd my-app
+          cd react-test-1
           npm run build
       - name: Run component tests
         run: |
-          cd my-app
+          cd react-test-1
           npm run test
       - name: Start the app
         run: |
-          cd my-app
+          cd react-test-1
           npm start &
           npx wait-on --timeout 6000
